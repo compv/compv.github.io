@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CompV</title>
+    
+<meta name="keywords" content="Data science, Computer vision, Artificial intelligence, free datasets, image processing"/>
+
+<meta name="description" content="Service for image processing and sending own image in open datasets for data science
+community of the world. All datasets are free for downloading and you can use in each your project if you want." />
+
+<link href="../../static/image_processing/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+
+
+<header>
+<div id="header-wrapper">
+	<div class="container">
+		<div id="logo">
+			<h1><a href="/image_processing/">CV dataset</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li ><a href="/image_processing/" accesskey="1" title="">Homepage</a></li>
+				<li><a href="/image_processing/datasets/" accesskey="2" title="">Datasets</a></li>
+				<li><a href="/image_processing/upload_and_image_processing/" accesskey="3" title="">Image processing</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</header>
+
+
+<section>
+<div id="header-featured">
+</div>
+<div id="banner-wrapper">
+	<div id="banner" class="container">
+		<h2>Computer vision</h2>
+		<span>is an interdisciplinary field that deals with how computers can be made for gaining
+            high-level understanding from digital images or videos. From the perspective of
+            engineering, it seeks to automate tasks that the human visual system can do.
+        </span>
+    </div>
+</div>
+</section>
+
+
+<section>
+<div id="wrapper">
+	<div id="page" class="container">
+		<div id="content">
+			<div class="title">
+				<h2>About our project</h2>
+				<span class="byline">We collect images for free datasets which you can use in your projects.</span>
+            </div>
+			<p>IT SECTION WIIL CONSIST ALL INFORMATION ABOUT PROJECT</br>
+            In the late 1960s, computer vision began at universities that were pioneering artificial intelligence. It was meant to mimic the human visual system, as a stepping stone to endowing robots with intelligent behavior.[11] In 1966, it was believed that this could be achieved through a summer project, by attaching a camera to a computer and having it "describe what it saw".[12][13]
+            What distinguished computer vision from the prevalent field of digital image processing at that time was a desire to extract three-dimensional structure from images with the goal of achieving full scene understanding. Studies in the 1970s formed the early foundations for many of the computer vision algorithms that exist today, including extraction of edges from images, labeling of lines, non-polyhedral and polyhedral modeling, representation of objects as interconnections of smaller structures, optical flow, and motion estimation.[11]The next decade saw studies based on more rigorous mathematical analysis and quantitative aspects of computer vision. These include the concept of scale-space, the inference of shape from various cues such as shading, texture and focus, and contour models known as snakes. Researchers also realized that many of these mathematical concepts could be treated within the same optimization framework as regularization and Markov random fields.[14] By the 1990s, some of the previous research topics became more active than the others. Research in projective 3-D reconstructions led to better understanding of camera calibration. With the advent of optimization methods for camera calibration, it was realized that a lot of the ideas were already explored in bundle adjustment theory from the field of photogrammetry. This led to methods for sparse 3-D reconstructions of scenes from multiple images. Progress was made on the dense stereo correspondence problem and further multi-view stereo techniques. At the same time, variations of graph cut were used to solve image segmentation. This decade also marked the first time statistical learning techniques were used in practice to recognize faces in images (see Eigenface). Toward the end of the 1990s, a significant change came about with the increased interaction between the fields of computer graphics and computer vision. This included image-based rendering, image morphing, view interpolation, panoramic image stitching and early light-field rendering.[11]Recent work has seen the resurgence of feature-based methods, used in conjunction with machine learning techniques and complex optimization frameworks</p>
+			<a href="registration/" class="button">Sign up</a>
+		</div>
+	</div>
+	<div id="featured-wrapper">
+		<div id="featured" class="container">
+            <div id="extra-title" class="container">
+			    <h2>How to upload image to dataset</h2>
+			    <span>Four simple steps</span>
+            </div>
+
+			<div class="column1">
+                <img src="../../static/image_processing/images/photo.png" width="100" height="100" alt="" />
+				<div class="title">
+					<h2>Take image</h2>
+				</div>
+                <p>Which <br>you want</p>
+			</div>
+			<div class="column2">
+                <img src="../../static/image_processing/images/upload.png" width="100" height="100" alt="" />
+				<div class="title">
+					<h2>Upload image</h2>
+				</div>
+				<p>We will be grateful for any images of different classes</p>
+			</div>
+			<div class="column3">
+                <img src="../../static/image_processing/images/image-processing.png" width="100" height="100" alt="" />
+				<div class="title">
+					<h2>Process image</h2>
+				</div>
+				<p>Here you can specify the characteristics of the image, mark the signs and improve it</p>
+			</div>
+			<div class="column4">
+                <img src="../../static/image_processing/images/send.png" width="100" height="100" alt="" />
+				<div class="title">
+					<h2>Send image</h2>
+				</div>
+                <p>And we add it to our <br>dataset</p>
+			</div>
+
+		</div>
+
+
+
+		<div id="extra" class="container">
+			<h2>Improve our future together</h2>
+			<span></span>
+        </div>
+
+
+
+        <canvas id="myCanvas" width="578" height="200"></canvas>
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+            var centerX = canvas.width / 2;
+            var centerY = canvas.height / 2;
+            var radius = 25;
+            context.beginPath();
+            context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+            context.fillStyle = 'blue';
+            context.fill();
+            context.lineWidth = 5;
+        </script>
+
+
+		<div id="extra2" class="container">
+
+			<div id="ebox1">
+				<div class="title">
+					<h2>Datasets</h2>
+					<span class="byline">Download and use any dataset in your projects</span>
+				</div>
+                <img src="../../static/image_processing/images/datasets.PNG" width="560" height="360" class="image image-full" alt="" />
+				<p> All datasets on our platform are free and can be used in home or commercial projects.
+                    New sets of data will appear after the accumulation of sufficient data in them and
+                    after checking our algorithms for compliance with the dataset.
+                </p>
+				<a href="#" class="button">Datasets</a>
+			</div>
+
+			<div id="ebox2">
+				<div class="title">
+					<h2>Image processing</h2>
+					<span class="byline">Upload and work with your image</span>
+				</div>
+                <img src="../../static/image_processing/images/image%20processing.PNG" width="560" height="360" class="image image-full" alt="" />
+				<p>After uploading an image, you can specify the type of it, where it was made,
+                    when it is shown in the picture, make a description, and you can mark the
+                    features and apply different effects.
+                </p>
+				<a href="#" class="button">Image processing</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+</section>
+
+
+<footer>
+	<div id="footer">
+        <div class="column1">
+            <ul>
+                <li class="title"><h2>CV DATASET</h2><li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">+380957779933</a></li>
+                <li><a href="#">CompV@gmail.com</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+	</div>
+</footer>
+</body>
+</html>

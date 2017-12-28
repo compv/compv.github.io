@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registration</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="../../static/image_processing/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+
+<header>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="/image_processing/">CV dataset</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="/image_processing/" accesskey="1" title="">Homepage</a></li>
+				<li><a href="/image_processing/datasets/" accesskey="2" title="">Datasets</a></li>
+				<li><a href="/image_processing/upload_and_image_processing/" accesskey="3" title="">Image processing</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</header>
+
+
+<section>
+<div  id="wrapper">
+    {% block content %}
+    <h1>Registration</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit"></input>
+    </form>
+{% endblock %}
+</div>
+</section>
+
+<script>
+    window.onload = function() {
+        if (localStorage) {
+            localStorage.setItem('emaill', Users.email);
+            var em = localStorage.getItem('emaill');
+            var Email = JSON.parse(localStorage.getItem("emaill"))
+          }
+        }
+</script>
+
+
+
+<script>
+function GrabTheDateFunction()
+{
+   var thisDate = new Date();
+
+   document.write("<p>The current date is: ");
+   document.write(thisDate.toDateString());
+   document.write("</p>");
+}
+
+</script>
+
+<script language="JavaScript">
+    GrabTheDateFunction();
+</script>
+
+
+
+
+<footer>
+    <div id="footer-wrapper">
+	<div id="footer" class="container">
+        <div class="column1">
+            <ul>
+                <li class="title"><h2>CV DATASET</h2><li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">+380957779933</a></li>
+                <li><a href="#">CompV@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="column2">
+            <ul>
+                <li class="title"><h2>Informatione</h2><li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+</footer>
+</body>
+</html>
+
